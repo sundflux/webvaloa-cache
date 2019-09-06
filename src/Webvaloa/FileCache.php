@@ -94,7 +94,7 @@ class FileCache
             $this->cache = new stdClass();
         }
 
-        if (!empty($config->cache_time)) {
+        if ($config->cache_time) {
             $this->expires = $config->cache_time;
         } else {
             // 10 minute session cache

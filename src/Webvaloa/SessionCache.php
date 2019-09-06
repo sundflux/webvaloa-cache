@@ -65,7 +65,7 @@ class SessionCache
             $_SESSION['cache'] = new stdClass();
         }
 
-        if (!empty($config->cache_time)) {
+        if ($config->cache_time) {
             $this->expires = $config->cache_time;
         }
     }

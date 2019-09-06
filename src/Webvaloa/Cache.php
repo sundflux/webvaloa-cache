@@ -72,12 +72,12 @@ class Cache implements ICache
         $backendLocal = '\Webvaloa\SessionCache';
 
         // Set global cache driver
-        if (!empty($config->cache_driver)) {
+        if ($config->cache_driver) {
             $backend = $config->cache_driver;
         }
 
         // Set local cache driver
-        if (!empty($config->local_cache_driver)) {
+        if ($config->local_cache_driver) {
             $backendLocal = $config->local_cache_driver;
         }
 

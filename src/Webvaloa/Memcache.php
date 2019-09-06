@@ -58,7 +58,7 @@ class Memcache
         $config = new Configuration();
 
         // Settings
-        if (!empty($config->memcached_host)) {
+        if ($config->memcached_host) {
             // Memcached driver from libvaloa
             $this->cache = new Memcached();
             $this->cache->properties['host'] = $config->memcached_host;
@@ -67,7 +67,7 @@ class Memcache
             $this->cache = &$_SESSION['__CACHE__'];
         }
 
-        if (!empty($config->memcached_expires)) {
+        if ($config->memcached_expires) {
             $this->cache->properties['expires'] = $config->memcached_expires;
         }
     }

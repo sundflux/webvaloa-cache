@@ -40,6 +40,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 Changes are grouped by added, fixed or changed feature.
 
+### [3.0.1] - 2019-09-06
+- Fix configuration usage.
+
 ### [3.0.0] - 2019-09-01
 - First version separated from Webvaloa main repository as a package. 
 
